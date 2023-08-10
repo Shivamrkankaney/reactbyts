@@ -1,0 +1,25 @@
+.back{
+    background-image: linear-gradient(to bottom right, rgb(15, 15, 37), rgb(34, 35, 57));
+
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/76/64/22/1000_F_376642225_kSCZgiZLpG5gFyYNBV9ODvP8QMYyiCfJ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+
+}
+.img{
+    border-radius: 10px;
+}
+.H{
+    text-align: center; font-size: 35px;color: white;
+}
+.P1{
+    text-align: center; font-size: 15px;color: white;
+}
+.P2{
+    text-align: center; margin-top: 10px;
+}
+.P3{
+    text-align: center;
+}

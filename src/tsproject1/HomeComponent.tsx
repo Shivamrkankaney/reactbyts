@@ -1,11 +1,11 @@
-import { Expand, Margin } from "@mui/icons-material";
+import { BrowserRouter, Link , Routes , Route } from "react-router-dom";
 import React from "react";
 import {
   AppBar,
   Toolbar,
   Typography,
   Container,
-  Tab,
+
   MenuList,
   MenuItem,
   Button,
@@ -15,6 +15,9 @@ import {
   ClickAwayListener,
 } from "@mui/material";
 import { MainComponent } from "./MainComponent";
+import { NasaApi } from "./nasaApi";
+import { FreeDemo } from "./FreeDemo";
+import { VideoComponent } from "./Video";
 
 const pages = ["Home", "Offering", "Pricing", "Resources"];
 
@@ -59,7 +62,7 @@ function handleListKeyDown(event: React.KeyboardEvent) {
             </div>
             <div style={{ display: "flex", marginLeft: "200px" }}>
               {pages.map((page: any) => (
-                <p style={{ paddingLeft: "30px", marginTop:'23px' }}>{page}</p>
+                <p style={{ paddingLeft: "30px", marginTop:"7.5px" }}>{page}</p>
               ))}
               <p style={{ marginLeft: "30px" }}>
 
@@ -104,7 +107,7 @@ function handleListKeyDown(event: React.KeyboardEvent) {
             <div style={{ display: "flex", marginLeft: "350px" }}>
               <p>Login</p>
               <p style={{ marginLeft: "10px" }}>
-                <button>SignIn</button>
+                <button> SignIn</button>
               </p>
             </div>
           </Typography>
@@ -112,7 +115,14 @@ function handleListKeyDown(event: React.KeyboardEvent) {
       </Container>
     </AppBar>
     <div>
-      <MainComponent/>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <MainComponent/>}></Route>
+        <Route path="Api" element={<NasaApi/>}></Route>
+        <Route path="Form" element={ <FreeDemo/>}></Route>
+        <Route path="Video" element={<VideoComponent/>}></Route>
+        </Routes></BrowserRouter>
+
     </div>
     </div>
   );
