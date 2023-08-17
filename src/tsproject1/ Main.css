@@ -4,10 +4,19 @@
     background-image: url(https://as1.ftcdn.net/v2/jpg/03/76/64/22/1000_F_376642225_kSCZgiZLpG5gFyYNBV9ODvP8QMYyiCfJ.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
-    width: 100%;
+    height: 100vh;
+    width: auto;
+    background-position:center;
+    background-attachment: fixed;
+
 
 }
+
+@media (max-width: 1048px ) {
+    .App {
+        background-position: center center;}
+    }
+
 .img{
     border-radius: 10px;
     width: 100%;
