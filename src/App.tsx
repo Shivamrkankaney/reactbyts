@@ -1,15 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import { HomeComponent } from './tsproject1/HomeComponent';
+
 import { Introduction } from './portfolio/pindex';
+import { Resume } from './portfolio/Resume';
+import { Pblog } from './portfolio/pblog';
+import { PContact } from './portfolio/pcontact';
+
+
+
+
+
 
 
 
 
 function App() {
   return (
-   <Introduction/>
+<Introduction/>
   );
 }
 
